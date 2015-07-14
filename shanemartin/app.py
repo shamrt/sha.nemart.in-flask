@@ -7,6 +7,7 @@ from shanemartin.assets import assets
 from shanemartin.extensions import (
     cache,
     debug_toolbar,
+    bootstrap,
 )
 from shanemartin import public
 
@@ -29,6 +30,7 @@ def register_extensions(app):
     assets.init_app(app)
     cache.init_app(app)
     debug_toolbar.init_app(app)
+    bootstrap.init_app(app)
     return None
 
 

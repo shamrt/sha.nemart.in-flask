@@ -8,3 +8,6 @@ cache = Cache()
 
 from flask_debugtoolbar import DebugToolbarExtension
 debug_toolbar = DebugToolbarExtension()
+
+from flask_bootstrap import Bootstrap
+bootstrap = Bootstrap()
