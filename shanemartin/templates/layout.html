@@ -24,21 +24,19 @@
   <link rel="stylesheet" href="{{ ASSET_URL }}">
   {%- endassets -%}
 
-  {% block css %}{% endblock %}
+  {%- block css %}{%- endblock %}
 
 </head>
 <body class="{% block body_class %}{% endblock %}">
-{% block body %}
-{% with form=form  %}
-{% include "nav.html" %}
-{% endwith %}
+{%- block body %}
+{%- include "nav.html" %}
 
 <header>{% block header %}{% endblock %}</header>
 <div class="{% block content_class %}container{% endblock content_class %}">
 
   <div role="main">
-    {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
+    {%- with messages = get_flashed_messages(with_categories=true) %}
+    {%- if messages %}
     <div class="row">
       <div class="col-md-12">
         {% for category, message in messages %}
@@ -49,7 +47,7 @@
         {% endfor %}
       </div><!-- end col-md -->
     </div><!-- end row -->
-        {% endif %}
+    {%- endif -%}
     {% endwith %}
 
     {% block content %}{% endblock %}
@@ -61,8 +59,8 @@
 
 <!-- JavaScript at the bottom for fast page loading -->
 {% assets "js_all" %}
-    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-{% endassets %}
+<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{%- endassets -%}
 {% block js %}{% endblock %}
 <!-- end scripts -->
 {% endblock %}
