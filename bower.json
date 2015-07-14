@@ -1,0 +1,26 @@
+{
+  "name": "shanemartin",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jQuery": "~2.1.4",
+    "fontawesome": "~4.3.0"
+  },
+  "version": "0.0.1",
+  "authors": [
+    "Shane Martin <dev.sh@nemart.in>"
+  ],
+  "description": "My profile",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "sha.nemart.in",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "shanemartin/static/libs",
+    "test",
+    "tests"
+  ]
+}
