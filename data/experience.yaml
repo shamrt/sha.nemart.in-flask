@@ -1,56 +1,76 @@
 2015:
     -
-        title   : Psychology's EloRater
-        url     : http://elo.sha.nemart.in
+        title: LCBOAPI
+        url: https://github.com/shamrt/LCBOAPI
+        summary: |
+            A [python](http://python.org) wrapper for the unofficial LCBO API.
+            *Solo effort.*
+        start_date: 2015-07-12
+        end_date: 2015-07-14
+
+    -
+        title: Psychology's EloRater
+        url: http://elo.sha.nemart.in
         summary: |
             A community-based project with the goal of rating the most influential people in the history of Psychology. An idea born from the mind of Dr. Christopher D. Green.
 
-            Created using <a href="http://flask.pocoo.org" target="_blank">Flask</a> and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>, with some customizations.
+            Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com), with some customizations.
             *Solo effort.*
-        start_date  : 2015-05-28
-        end_date    : 2015-07-10
-        
+        start_date: 2015-05-28
+        end_date: 2015-07-10
+    -
+        title: RAPA
+        url: https://github.com/shamrt/rapa
+        summary: |
+            A library, written in [R](http://www.r-project.org), that allows you to dynamically inject R objects (especially tables) into your manuscript and does its best to style them in accordance with APA 6 guidelines. It is especially handy when used in combination with [RMarkdown](http://rmarkdown.rstudio.com).
+            *Solo effort.*
+        start_date: 2015-04-24
+        end_date: 2015-05-25
+
+
+
+
 2014:
     -
-        title   : Toplak Lab
-        url     : http://mtoplak.info.yorku.ca
+        title: Toplak Lab
+        url: http://mtoplak.info.yorku.ca
         summary: |
             Toplak Lab focuses the psychology of rational thinking and cognitive
             abilities. It is run out of York University by Dr. Maggie Toplak.
 
             Created with York University's on-site WordPress and the <a href="http://www.themesandco.com/customizr" target="_blank">Customizr theme</a>, with some customizations.
             *Solo effort. Client-managed.*
-        start_date  : 2014-05-26
-        end_date    : 2013-01-08
+        start_date: 2014-05-26
+        end_date: 2013-01-08
 
 2013:
     -
-        title   : CX Branding (defunct)
-        url     : http://cxbranding.com
+        title: CX Branding (defunct)
+        url: http://cxbranding.com
         summary: |
             CX Branding is the advertising and investment branch of ComerXGroup, an
             international business group based out of Miami, Florida and Lima, Peru.
 
             Created with WordPress and the <a href="http://themeforest.net/item/whiteblack-premium-business-wordpress-theme/4482306" target="_blank">WhiteBlack theme by cmsmasters at ThemeForest</a>, with some customizations.
             *Solo effort. Client-managed.*
-        start_date  : 2013-07-12
-        end_date    : 2013-09-06
+        start_date: 2013-07-12
+        end_date: 2013-09-06
 
     -
-        title   : Dance Dance Dance
-        url     : http://dancedancedance.ca
+        title: Dance Dance Dance
+        url: http://dancedancedance.ca
         summary: |
             DanceDanceDance is a ballroom dance studio located on the Danforth in Toronto, ON.
 
             Created with WordPress. The design is derived from <a href="http://www.inkthemes.com/wp-themes" target="_blank">Blackbird Theme</a>, though with a profusion of improvements and customizations.
             *Solo effort.*
-        start_date  : 2013-06-20
-        end_date    : 2013-07-04
+        start_date: 2013-06-20
+        end_date: 2013-07-04
 
 2012:
     -
-        title   : YUSHPP Website
-        url     : http://yushpp.yorku.ca
+        title: YUSHPP Website
+        url: http://yushpp.yorku.ca
         summary: |
             A summer of 2012 project that was commissioned in order to develop a
             cohesive web presence for the Specialized Honours in Psychology Program at
@@ -61,61 +81,61 @@
             Strictly adheres to [York University's web guidelines](http://www.yorku.ca/yorkweb/standards/web/style-guide).
             *Project management, UX/UI development, web development and server management.*
 
-        start_date  : 2012-05-15
-        end_date    : 2012-09-07
+        start_date: 2012-05-15
+        end_date: 2012-09-07
 
 2011:
     -
-        title   : York University Baseball Website
-        url     : http://yorkubaseball.ca
+        title: York University Baseball Website
+        url: http://yorkubaseball.ca
         summary: >
             As president and treasurer of the York University baseball club,
             along with fellow player, <a href="http://sheyworth.com"
             target="_blank">Shane Heyworth</a> (who did the design work), I
             created the team's first independent web presence. *Project
             management.*
-        start_date  : 2011-05-05
-        end_date    : 2011-09-14
+        start_date: 2011-05-05
+        end_date: 2011-09-14
 
 2010:
     -
-        title   : Rebel House Website
-        url     : http://rebelhouse.ca
+        title: Rebel House Website
+        url: http://rebelhouse.ca
         summary: |
             The Rebel House is a Canadian pub located in uptown Toronto. Great eats, great people, great taps.
 
             Created in partnership with [Mike Boers](http://mikeboers.com). *Design, UI & project management.*
-        start_date  : 2010-03-25
-        end_date    : 2010-08-17
+        start_date: 2010-03-25
+        end_date: 2010-08-17
 
     -
-        title   : Swisssol Inc. Website
-        url     : http://swisssol.com
+        title: Swisssol Inc. Website
+        url: http://swisssol.com
         summary: |
             Swisssol is a European hotel amenities wholesaler.
 
             Created in partnership with [Mike Boers](http://mikeboers.com). *Design, UI & project management.*
-        start_date  : 2010-10-24
-        end_date    : 2011-01-12
+        start_date: 2010-10-24
+        end_date: 2011-01-12
 
 2009:
     -
-        title   : STAR Symposium Website (defunct)
-        url     : http://starsymposium.ca
+        title: STAR Symposium Website (defunct)
+        url: http://starsymposium.ca
         summary: |
             The STAR Symposium is an annual science event hosted by the undergraduate and masters students from the science department at York University.
 
             Created with WordPress, the design is derived from, and utilizes much of, [Derek Punsalan](http://5thirtyone.com/)'s Grid Focus. *Solo effort.*
-        start_date  : 2009-01-02
-        end_date    : 2009-01-12
+        start_date: 2009-01-02
+        end_date: 2009-01-12
 
 2008:
     -
-        title   : Garth Scheuer Website
-        url     : http://garthscheuer.com
+        title: Garth Scheuer Website
+        url: http://garthscheuer.com
         summary: |
             Garth Scheuer is a fine arts painter from Toronto, Canada.
 
             This website was originally created using PixelPost, but was switched to WordPress in late-2009. *Solo effort.*
-        start_date  : 2008-04-01
-        end_date    : 2008-06-15
+        start_date: 2008-04-01
+        end_date: 2008-06-15
