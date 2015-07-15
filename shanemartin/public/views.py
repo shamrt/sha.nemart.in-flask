@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """Public section, including homepage and signup."""
+import os.path
+import yaml
 from collections import OrderedDict
 from datetime import date
-import yaml
+
 from flask import (Blueprint, request, render_template, flash, url_for,
-                    redirect, session)
+                    redirect, session, current_app)
 
 from shanemartin.utils import flash_errors
 
@@ -20,9 +22,10 @@ def import_yaml(file_path):
 @blueprint.route("/", methods=["GET", "POST"])
 def home():
     experience = import_yaml('data/experience.yaml')
-
-    print experience
     profile = yaml.load(open('data/profile.yaml', 'r'))
     profile['meta']['years_of_work'] = date.today().year - profile['meta']['year_started_work']
 
-    return render_template("public/home.html", xp=experience, pf=profile)
+    last_updated_timestamp = os.path.getmtime(current_app.config['PROJECT_ROOT'])
+    last_updated = date.fromtimestamp(last_updated_timestamp)
+
+    return render_template("public/home.html", xp=experience, pf=profile, last_updated=last_updated)

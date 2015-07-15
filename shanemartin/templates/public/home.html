@@ -28,7 +28,10 @@
               <h5>{{ pf.profession }}</h5>
               <hr>
               <p>{{ pf.biography|replace('#year#', pf.meta.years_of_work)|markdown }}</p>
-              <p class="pull-right red">{{ macros.fa('cube') }}</p>
+              <p class="pull-right red">
+                <small>Last updated: {{ last_updated }}</small>
+                {{ macros.fa('cube') }}
+              </p>
             </div>
           </div>
         </div><!-- /tab about -->
