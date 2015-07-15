@@ -6,9 +6,9 @@ from shanemartin.settings import ProdConfig
 from shanemartin.assets import assets
 from shanemartin.extensions import (
     cache,
-    debug_toolbar,
     bootstrap,
     markdown,
+    freezer,
 )
 from shanemartin import public
 
@@ -24,15 +24,16 @@ def create_app(config_object=ProdConfig):
     register_extensions(app)
     register_blueprints(app)
     register_errorhandlers(app)
+    freezer.freeze()
     return app
 
 
 def register_extensions(app):
     assets.init_app(app)
     cache.init_app(app)
-    debug_toolbar.init_app(app)
     bootstrap.init_app(app)
     markdown.init_app(app)
+    freezer.init_app(app)
     return None
 
 

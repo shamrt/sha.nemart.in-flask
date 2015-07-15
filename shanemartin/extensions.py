@@ -6,11 +6,11 @@ in app.py
 from flask_cache import Cache
 cache = Cache()
 
-from flask_debugtoolbar import DebugToolbarExtension
-debug_toolbar = DebugToolbarExtension()
-
 from flask_bootstrap import Bootstrap
 bootstrap = Bootstrap()
 
 from flask_misaka import Misaka
 markdown = Misaka()
+
+from flask_frozen import Freezer
+freezer = Freezer()
