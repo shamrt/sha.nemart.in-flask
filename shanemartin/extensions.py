@@ -11,3 +11,6 @@ debug_toolbar = DebugToolbarExtension()
 
 from flask_bootstrap import Bootstrap
 bootstrap = Bootstrap()
+
+from flask_misaka import Misaka
+markdown = Misaka()

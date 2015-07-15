@@ -1,0 +1,79 @@
+name: Shane Martin
+profession: Web Developer & Psychology Student
+biography: |
+    I am an Internet UX developer with over #year# years of professional experience. In 2010, I decided to switch careers — turning from software development toward the study and resolution of pervasive psychosocial issues. I am now a psychology student at York University.
+
+    **Please note:** I am still happy to accept requests for new website development between the months of May and August.
+
+contact:
+    -
+        text: sh@nemart.in
+        url: mailto:sh@nemart.in
+        icon: envelope
+    -
+        text: (647) 588-3675
+        url: tel:647-588-3675
+        icon: phone
+
+social_networks:
+    -
+        name: Twitter
+        handle: '@sha_mrt'
+        url : http://twitter.com/sha_mrt
+    -
+        name: Github
+        handle: shamrt
+        url : http://github.com/shamrt
+    -
+        name: LinkedIn
+        handle: shamrt
+        url : http://ca.linkedin.com/in/shamrt
+    -
+        name: Facebook
+        handle: sha.mrt
+        url : http://facebook.com/sha.mrt
+
+education:
+    start_date : 2010
+    end_date : 2015
+    program : Psychology, BA (Specialized Honours)
+    status: Summa cum Laude
+    institution : York University, Toronto
+
+skills:
+    softwares: |
+        * [RStudio](http://www.rstudio.com) /
+          [SPSS](http://www.ibm.com/software/analytics/spss) /
+          [SAS](http://www.sas.com)
+        * [Sublime Text](http://www.sublimetext.com) /
+          [TextMate](http://macromates.com) /
+          [VIM](http://www.vim.org)
+        * [RubyMine](https://www.jetbrains.com/ruby) /
+          [Eclipse](http://eclipse.org) /
+          [NetBeans](http://netbeans.org)
+          IDEs
+        * [Adobe Creative Suite](http://www.adobe.com)
+        * [Microsoft Office Suite](http://office.microsoft.com)
+        * [Bash](http://en.wikipedia.org/wiki/Bash_(Unix_shell\)) /
+          [ZSH](http://www.zsh.org)
+
+    languages: |
+        * [Python](http://www.python.org) ([Flask](http://flask.pocoo.org))
+        * [Ruby](http://www.ruby-lang.org)
+          ([Sinatra](http://www.sinatrarb.com), [Padrino](http://www.padrinorb.com))
+        * [R](http://www.r-project.org)
+        * [PHP](http://php.net) ([Wordpress](http://wordpress.org))
+        * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) ([jQuery](http://jquery.com))
+        * [HTML5](http://www.html5rocks.com) /
+          [CSS3](http://www.css3.info)
+        * [HAML](http://haml.info) /
+          [SASS/SCSS](http://sass-lang.com) ([Compass](http://compass-style.org)) /
+          [Mako](http://www.makotemplates.org) /
+          [Jinja2](http://jinja.pocoo.org)
+        * [LaTeX](http://www.latex-project.org)
+        * ([Multi](http://fletcherpenney.net/mmd))[Markdown](http://daringfireball.net/projects/markdown) /
+          [Textile](http://redcloth.org/hobix.com/textile) /
+          [MediaWiki](https://www.mediawiki.org/wiki/Main_Page)
+
+meta:
+    year_started_work: 2004

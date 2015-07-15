@@ -1,33 +1,130 @@
-
 {% extends "layout.html" %}
-{% block content %}
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
 
-  <h1>Welcome to Sha.neMart.in</h1>
+{% block content -%}
+<div class="container">
+  <div class="col-lg-6 col-lg-offset-3">
 
-  <p>This is a starter Flask template. It includes Bootstrap 3, jQuery 2, Flask-SQLAlchemy, WTForms, and various testing utilities out of the box.</p>
-  <p><a href="https://github.com/sloria/cookiecutter-flask" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div><!-- /.jumbotron -->
+    <!-- ===== vCard Navigation ===== -->
+    <div class="row w">
+      <div class="col-md-4">
+        <img class="img-responsive" src="{{ url_for('static', filename='img/avatar.jpg') }}" alt="">
+      <ul class="nav nav-tabs nav-stacked" id="nav-tabs">
+        <li class="active"><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- col-md-4 -->
 
-<div class="body-content">
-  <div class="row">
-    <div class="col-lg-4">
-      <h2><i class="fa fa-code"></i> Bootstrap 3</h2>
-      <p>Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</p>
-      <p><a class="btn btn-default" href="http://getbootstrap.com/">Official website &raquo;</a></p>
-    </div>
-    <div class="col-lg-4">
-      <h2><i class="fa fa-flask"></i> SQLAlchemy</h2>
-      <p>SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.</p>
-      <p><a href="http://www.sqlalchemy.org/" class="btn btn-default" href="#">Official website &raquo;</a></p>
-   </div>
-    <div class="col-lg-4">
-      <h2><i class="fa fa-edit"></i> WTForms</h2>
-      <p>WTForms is a flexible forms validation and rendering library for python web development.</p>
-      <p><a href="http://wtforms.simplecodes.com/" class="btn btn-default" href="#">Official website &raquo;</a></p>
-    </div>
-  </div><!-- /.row -->
+    <!-- ===== vCard Content ===== -->
+      <div class="col-md-8">
+        <div class="tab-content">
+
+
+        <div class="tab-pane active" id="about">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>{{ pf.name }}</h2>
+              <h5>{{ pf.profession }}</h5>
+              <hr>
+              <p>{{ pf.biography|replace('#year#', pf.meta.years_of_work)|markdown }}</p>
+              <p class="pull-right red">{{ macros.fa('cube') }}</p>
+            </div>
+          </div>
+        </div><!-- /tab about -->
+
+
+        <div class="tab-pane" id="profile">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3 class="title">{{ macros.fa('graduation-cap') }} Education</h3>
+
+              <p>
+                <h4>{{ pf.education.program }} | <small>{{ pf.education.start_date }} - {{ pf.education.end_date }}</small></h4>
+                {{ pf.education.institution }} <br />
+                {{ pf.education.status }}
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <h3 class="title">{{ macros.fa('terminal') }} Softwares</h3>
+
+              {{ pf.skills.softwares|markdown }}
+            </div>
+            <div class="col-xs-6">
+              <h3 class="title">{{ macros.fa('code') }} Languages</h3>
+
+              {{ pf.skills.languages|markdown }}
+            </div>
+          </div>
+        </div><!-- /tab profile -->
+
+
+        <div class="tab-pane" id="portfolio">
+          {% for year, jobs in xp.iteritems() %}
+          <h3 class="title">{{ year }}</h3>
+            {% for job in jobs %}
+            <div class="row">
+              <div class="col-xs-12">
+                {% set job_years = '' %}
+                {% if year != job['start_date'].year %}
+                  {% set job_years = job_years + str(job['start_date'].year) + "–" %}
+                {% endif %}
+                {% set job_years = job_years + year|string %}
+
+                {% set job_months = '' %}
+                {% if job['start_date'].month != job['end_date'].month %}
+                  {% set job_months = job_months + job['start_date'].strftime('%B') + "–" %}
+                {% endif %}
+                {% set job_months = job_months + job['end_date'].strftime('%B') %}
+
+
+                <h4>
+                  <a href="{{ job.url }}" target="_blank">{{ job.title }}</a>
+                  <grey><small>({{ job['start_date'].strftime('%B, %Y') }} &ndash; {{ job['end_date'].strftime('%B, %Y') }})</small></gray>
+                </h4>
+                <h5><a href="{{ job.url }}" target="_blank">
+                  {{ macros.fa('link') }}
+                  {{ job.url }}
+                </a></h5>
+
+                {{ job.summary|markdown }}
+
+                <hr />
+              </div><!-- col-xs-6 -->
+            </div><!-- row -->
+            {% endfor %}
+          {% endfor %}
+        </div><!-- /tab portfolio -->
+
+
+        <div class="tab-pane" id="contact">
+          <h3 class="title">Contact Information</h3>
+          <div class="row">
+            {% for c in pf.contact -%}
+            <div class="col-xs-6">
+                <p>
+                  <a href="{{ c.url }}">{{ macros.fa(c.icon + '-square') }} {{ c.text }}</a>
+                </p>
+            </div>
+            {%- endfor %}
+          </div><!-- row -->
+
+          <h3 class="title">Social Links</h3>
+          <div class="row">
+            {% for sn in pf.social_networks -%}
+            <div class="col-xs-6">
+                <a href="{{ sn.url }}" title="My {{ sn.name }} account" target="_blank">{{ macros.fa(sn.name|lower + '-square') }} {{ sn.handle }}</a>
+            </div>
+            {%- endfor %}
+          </div><!-- row -->
+        </div>
+
+      </div><!-- /tab content -->
+      </div><!-- col-md-8 -->
+    </div><!-- row w -->
+  </div><!-- col-lg-6 -->
 </div>
-{% endblock %}
-
+{%- endblock %}

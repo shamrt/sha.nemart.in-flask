@@ -8,6 +8,7 @@ from shanemartin.extensions import (
     cache,
     debug_toolbar,
     bootstrap,
+    markdown,
 )
 from shanemartin import public
 
@@ -31,6 +32,7 @@ def register_extensions(app):
     cache.init_app(app)
     debug_toolbar.init_app(app)
     bootstrap.init_app(app)
+    markdown.init_app(app)
     return None
 
 

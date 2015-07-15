@@ -7,6 +7,10 @@ Werkzeug==0.10.4
 Jinja2==2.7.3
 itsdangerous==0.24
 
+# Data
+Flask-Misaka==0.3.0
+pyyaml>=3.11
+
 # Bootstrap
 Flask-Bootstrap==3.3.5.2
 

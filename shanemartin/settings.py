@@ -19,7 +19,7 @@ class ProdConfig(Config):
     ENV = 'prod'
     DEBUG = False
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
-
+    GOOGLE_ANALYTICS_ID = 'UA-7818804-1'
 
 class DevConfig(Config):
     """Development configuration."""
