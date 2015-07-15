@@ -81,10 +81,10 @@
                   <a href="{{ job.url }}" target="_blank">{{ job.title }}</a>
                   <small>({{ job_timespan }})</small>
                 </h4>
-                <h5><a href="{{ job.url }}" target="_blank">
+                <h5>
+                  <a href="{{ job.url }}" target="_blank">{{ job.url }}</a>
                   {{ macros.fa('link') }}
-                  {{ job.url }}
-                </a></h5>
+                </h5>
 
                 {{ job.summary|markdown }}
 
@@ -102,7 +102,8 @@
             {% for c in pf.contact -%}
             <div class="col-xs-6">
                 <p>
-                  <a href="{{ c.url }}">{{ macros.fa(c.icon + '-square') }} {{ c.text }}</a>
+                  {{ macros.fa(c.icon + '-square') }}
+                  <a href="{{ c.url }}">{{ c.text }}</a>
                 </p>
             </div>
             {%- endfor %}
@@ -112,7 +113,8 @@
           <div class="row">
             {% for sn in pf.social_networks -%}
             <div class="col-xs-6">
-                <a href="{{ sn.url }}" title="My {{ sn.name }} account" target="_blank">{{ macros.fa(sn.name|lower + '-square') }} {{ sn.handle }}</a>
+                {{ macros.fa(sn.name|lower + '-square') }}
+                <a href="{{ sn.url }}" title="My {{ sn.name }} account" target="_blank">{{ sn.handle }}</a>
             </div>
             {%- endfor %}
           </div><!-- row -->

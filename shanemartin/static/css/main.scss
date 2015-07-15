@@ -9,7 +9,8 @@
 $green_color: #668042;
 $dark_green_color: #334021;
 $light_green_color: lighten($green_color, 35%);
-$light_gray_color: #dddddd;
+$gray_color: #ccc;
+$light_gray_color: #ddd;
 
 body {
   background-color: #f2f2f2;
@@ -126,6 +127,10 @@ hr {
   h3.title {
     border-bottom: 1px solid $dark_green_color;
     padding-bottom: 0.5em;
+  }
+  p em {
+    color: $gray_color;
+    display: block;
   }
 }
 
