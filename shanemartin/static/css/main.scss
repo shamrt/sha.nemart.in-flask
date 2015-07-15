@@ -4,9 +4,12 @@
  *
  * Derived from: Victoria vCard (http://blacktie.co) by Carlos Alvarez
  */
+@import "compass/css3";
 
 $green_color: #668042;
 $dark_green_color: #334021;
+$light_green_color: lighten($green_color, 35%);
+$light_gray_color: #dddddd;
 
 body {
   background-color: #f2f2f2;
@@ -19,10 +22,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include background-size(cover);
 }
 
 // Titles
@@ -38,24 +38,17 @@ h1, h2, h3, h4, h5, h6 {
 
 // Links
 a {
+  border-bottom: 1px dotted $light_green_color;
   color: $green_color;
-  word-wrap: break-word;
-  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-  transition: color 0.1s ease-in, background 0.1s ease-in;
+  @include transition(color 0.1s ease-in, background 0.1s ease-in);
   &:hover, &:focus {
-    color: #7b7b7b;
-    text-decoration: none;
+    border-bottom: 1px solid $green_color;
+    color: $dark_green_color;
     outline: 0;
+    text-decoration: none;
   }
   &:before, &:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+    @include transition(color 0.1s ease-in, background 0.1s ease-in);
   }
 }
 
@@ -70,23 +63,21 @@ hr {
 
 .w {
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid $light_gray_color;
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-// Bootstrap customizations
+
+// Navigation & Tabs
 
 .col-md-4, .col-md-8 {
   padding-left: 0px;
   padding-right: 0px;
 }
-
-// Navigation & Tabs
-
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid $light_gray_color;
   > li {
     &.active > a {
       color: #555555;
@@ -111,7 +102,7 @@ hr {
     > a {
       margin-right: 2px;
       line-height: 1.428571429;
-      border-bottom: 1px solid #dddddd;
+      border-bottom: 1px solid $light_gray_color;
       border-radius: 0 0 0 0;
       width: 100%;
       background-color: #f2f2f2;
@@ -148,11 +139,7 @@ i {
   vertical-align: middle;
 }
 
-// .sm {
-//   font-size: 14px;
-// }
-
-a h6 {
+h6 a {
   color: $green_color;
   &:hover {
     color: #7b7b7b;

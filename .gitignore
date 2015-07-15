@@ -1,5 +1,6 @@
 # Project-related
 shanemartin/static/libs
+shanemartin/static/css/common.css
 
 # Python
 *.py[cod]

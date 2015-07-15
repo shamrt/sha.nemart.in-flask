@@ -3,7 +3,7 @@ from flask_assets import Bundle, Environment
 
 css = Bundle(
     "css/main.scss",
-    filters="scss",
+    filters="compass",
     output="public/css/common.css"
 )
 
