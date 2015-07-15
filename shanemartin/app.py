@@ -8,7 +8,6 @@ from shanemartin.extensions import (
     cache,
     bootstrap,
     markdown,
-    freezer,
 )
 from shanemartin import public
 
@@ -24,7 +23,6 @@ def create_app(config_object=ProdConfig):
     register_extensions(app)
     register_blueprints(app)
     register_errorhandlers(app)
-    freezer.freeze()
     return app
 
 
@@ -33,7 +31,6 @@ def register_extensions(app):
     cache.init_app(app)
     bootstrap.init_app(app)
     markdown.init_app(app)
-    freezer.init_app(app)
     return None
 
 

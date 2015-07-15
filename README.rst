@@ -14,17 +14,18 @@ First, set your app's secret key as an environment variable. For example, exampl
 
     export SHANEMARTIN_SECRET='something-really-secret'
 
+Ensure that you have Fabric installed on your system ::
+
+    pip install fabric
 
 Then run the following commands to bootstrap your environment.
-
 
 ::
 
     git clone https://github.com/shamrt/shanemartin
     cd shanemartin
-    pip install -r requirements/dev.txt
-    bower install
-    python manage.py server
+    fab setup
+    fab run
 
 You will see a pretty welcome screen.
 
@@ -32,7 +33,13 @@ You will see a pretty welcome screen.
 Deployment
 ----------
 
-In your production environment, make sure the ``SHANEMARTIN_ENV`` environment variable is set to ``"prod"``.
+In your production environment, set the ``SHANEMARTIN_ENV`` environment variable to ``"prod"``, i.e. ::
+
+    export SHANEMARTIN_ENV='prod'
+
+Then setup the application (see above) and freeze it ::
+
+    fab freeze
 
 
 Shell

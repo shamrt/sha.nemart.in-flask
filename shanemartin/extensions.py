@@ -11,6 +11,3 @@ bootstrap = Bootstrap()
 
 from flask_misaka import Misaka
 markdown = Misaka()
-
-from flask_frozen import Freezer
-freezer = Freezer()

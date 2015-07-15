@@ -5,6 +5,3 @@
 pytest>=2.7.2
 webtest
 factory-boy==2.5.1
-
-# Management script
-Flask-Script
