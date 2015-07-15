@@ -2,127 +2,124 @@
 
 {% block content -%}
 <div class="container">
-  <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+  <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12">
 
-    <!-- ===== vCard Navigation ===== -->
-    <div class="row w">
-      <div class="col-md-4">
+    <div id="vcard" class="row">
+      <div id="vcard-nav" class="col-md-4">
         <img class="img-responsive" src="{{ url_for('static', filename='img/avatar.jpg') }}" alt="">
-      <ul class="nav nav-tabs nav-stacked" id="nav-tabs">
-        <li class="active"><a href="#about">About</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!-- col-md-4 -->
+        <ul class="nav nav-tabs nav-stacked" id="nav-tabs">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- col-md-4 -->
 
-    <!-- ===== vCard Content ===== -->
-      <div class="col-md-8">
+      <div id="vcard-content" class="col-md-8">
         <div class="tab-content">
 
-
-        <div class="tab-pane active" id="about">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2>{{ pf.name }}</h2>
-              <h5>{{ pf.profession }}</h5>
-              <hr>
-              <p>{{ pf.biography|replace('#year#', pf.meta.years_of_work)|markdown }}</p>
-              <p class="pull-right red">
-                <small>Last updated: {{ last_updated }}</small>
-                {{ macros.fa('cube') }}
-              </p>
-            </div>
-          </div>
-        </div><!-- /tab about -->
-
-
-        <div class="tab-pane" id="profile">
-          <div class="row">
-            <div class="col-xs-12">
-              <h3 class="title">{{ macros.fa('graduation-cap') }} Education</h3>
-
-              <p>
-                <h4>{{ pf.education.program }} <small>({{ pf.education.start_date }} - {{ pf.education.end_date }})</small></h4>
-                {{ pf.education.institution }} <br /> {{ pf.education.status }}
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6">
-              <h3 class="title">{{ macros.fa('terminal') }} Softwares</h3>
-
-              {{ pf.skills.softwares|markdown }}
-            </div>
-            <div class="col-sm-6">
-              <h3 class="title">{{ macros.fa('code') }} Languages</h3>
-
-              {{ pf.skills.languages|markdown }}
-            </div>
-          </div>
-        </div><!-- /tab profile -->
-
-
-        <div class="tab-pane" id="portfolio">
-          {% for year, jobs in xp.iteritems() %}
-          <h3 class="title">{{ year }}</h3>
-            {% for job in jobs %}
+          <div class="tab-pane active" id="about">
             <div class="row">
               <div class="col-xs-12">
-                {%- set start_date = job['start_date'].strftime('%B, %Y')|string %}
-                {%- set end_date = job['end_date'].strftime('%B, %Y')|string %}
-                {%- set job_timespan = start_date %}
-                {%- if start_date != end_date %}
-                  {% set job_timespan = start_date + " – " + end_date %}
-                {%- endif -%}
-
-                <h4>
-                  <a href="{{ job.url }}" target="_blank">{{ job.title }}</a>
-                  <small>({{ job_timespan }})</small>
-                </h4>
-                <h5>
-                  <a href="{{ job.url }}" target="_blank">{{ job.url }}</a>
-                  {{ macros.fa('link') }}
-                </h5>
-
-                {{ job.summary|markdown }}
-
-                <hr />
-              </div><!-- col-xs-6 -->
-            </div><!-- row -->
-            {% endfor %}
-          {% endfor %}
-        </div><!-- /tab portfolio -->
-
-
-        <div class="tab-pane" id="contact">
-          <h3 class="title">Contact Information</h3>
-          <div class="row">
-            {% for c in pf.contact -%}
-            <div class="col-xs-6">
-                <p>
-                  {{ macros.fa(c.icon + '-square') }}
-                  <a href="{{ c.url }}">{{ c.text }}</a>
+                <h2>{{ pf.name }}</h2>
+                <h5>{{ pf.profession }}</h5>
+                <hr>
+                <p>{{ pf.biography|replace('#year#', pf.meta.years_of_work)|markdown }}</p>
+                <p class="pull-right red">
+                  <small>Last updated: {{ last_updated }}</small>
+                  {{ macros.fa('cube') }}
                 </p>
+              </div>
             </div>
-            {%- endfor %}
-          </div><!-- row -->
+          </div><!-- /tab about -->
 
-          <h3 class="title">Social Links</h3>
-          <div class="row">
-            {% for sn in pf.social_networks -%}
-            <div class="col-xs-6">
-                {{ macros.fa(sn.name|lower + '-square') }}
-                <a href="{{ sn.url }}" title="My {{ sn.name }} account" target="_blank">{{ sn.handle }}</a>
+
+          <div class="tab-pane" id="profile">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="title">{{ macros.fa('graduation-cap') }} Education</h3>
+
+                <p>
+                  <h4>{{ pf.education.program }} <small>({{ pf.education.start_date }} - {{ pf.education.end_date }})</small></h4>
+                  {{ pf.education.institution }} <br /> {{ pf.education.status }}
+                </p>
+              </div>
             </div>
-            {%- endfor %}
-          </div><!-- row -->
-        </div>
 
-      </div><!-- /tab content -->
+            <div class="row">
+              <div class="col-sm-6">
+                <h3 class="title">{{ macros.fa('terminal') }} Softwares</h3>
+
+                {{ pf.skills.softwares|markdown }}
+              </div>
+              <div class="col-sm-6">
+                <h3 class="title">{{ macros.fa('code') }} Languages</h3>
+
+                {{ pf.skills.languages|markdown }}
+              </div>
+            </div>
+          </div><!-- /tab profile -->
+
+
+          <div class="tab-pane" id="portfolio">
+            {% for year, jobs in xp.iteritems() %}
+            <h3 class="title">{{ year }}</h3>
+              {% for job in jobs %}
+              <div class="row">
+                <div class="col-xs-12">
+                  {%- set start_date = job['start_date'].strftime('%B, %Y')|string %}
+                  {%- set end_date = job['end_date'].strftime('%B, %Y')|string %}
+                  {%- set job_timespan = start_date %}
+                  {%- if start_date != end_date %}
+                    {% set job_timespan = start_date + " – " + end_date %}
+                  {%- endif -%}
+
+                  <h4>
+                    <a href="{{ job.url }}" target="_blank">{{ job.title }}</a>
+                    <small>({{ job_timespan }})</small>
+                  </h4>
+                  <h5>
+                    <a href="{{ job.url }}" target="_blank">{{ job.url }}</a>
+                    {{ macros.fa('link') }}
+                  </h5>
+
+                  {{ job.summary|markdown }}
+
+                  <hr />
+                </div><!-- col-xs-6 -->
+              </div><!-- row -->
+              {% endfor %}
+            {% endfor %}
+          </div><!-- /tab portfolio -->
+
+
+          <div class="tab-pane" id="contact">
+            <h3 class="title">Contact Information</h3>
+            <div class="row">
+              {% for c in pf.contact -%}
+              <div class="col-xs-6">
+                  <p>
+                    {{ macros.fa(c.icon + '-square') }}
+                    <a href="{{ c.url }}">{{ c.text }}</a>
+                  </p>
+              </div>
+              {%- endfor %}
+            </div><!-- row -->
+
+            <h3 class="title">Social Links</h3>
+            <div class="row">
+              {% for sn in pf.social_networks -%}
+              <div class="col-xs-6">
+                  {{ macros.fa(sn.name|lower + '-square') }}
+                  <a href="{{ sn.url }}" title="My {{ sn.name }} account" target="_blank">{{ sn.handle }}</a>
+              </div>
+              {%- endfor %}
+            </div><!-- row -->
+          </div>
+
+        </div><!-- /tab content -->
       </div><!-- col-md-8 -->
-    </div><!-- row w -->
+    </div><!-- /#vcard-nav -->
   </div><!-- col-lg-6 -->
 </div>
 {%- endblock %}
