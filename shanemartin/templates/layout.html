@@ -5,11 +5,12 @@
 
 {% block title %}Sha.neMart.in{% endblock %}
 {% block metas %}
+    {{super()}}
     <meta charset="utf-8">
     <meta name="description" content="{% block meta_description %}{% endblock %}">
     <meta name="author" content="{% block meta_author %}{% endblock %}">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
-{%- endblock -%}
+{% endblock %}
 
 {% block styles -%}
     {{super()}}
