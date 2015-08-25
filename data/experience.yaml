@@ -1,5 +1,16 @@
 2015:
     -
+        title: MyLiqbo
+        url: http://myliqbo.com
+        summary: |
+            A small webapp that, for now, helps you find your local (or any other) LCBO retail store and discover the best products available there.
+
+            Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com).
+            *Developed together with my wife, Lianne Manzer.*
+        start_date: 2015-07-15
+        end_date: 2015-08-18
+
+    -
         title: LCBOAPI
         url: https://github.com/shamrt/LCBOAPI
         summary: |
