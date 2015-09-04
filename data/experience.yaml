@@ -26,9 +26,9 @@
             A community-based project with the goal of rating the most influential people in the history of Psychology. An idea born from the mind of Dr. Christopher D. Green.
 
             Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com), with some customizations.
-            *STILL UNDER DEVELOPMENT. Solo effort.*
+            *Solo effort.*
         start_date: 2015-05-28
-        end_date: 2015-07-10
+        end_date: 2015-09-04
     -
         title: RAPA
         url: https://github.com/shamrt/rapa
