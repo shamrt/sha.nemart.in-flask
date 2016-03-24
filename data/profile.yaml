@@ -28,10 +28,6 @@ social_networks:
         name: LinkedIn
         handle: shamrt
         url : http://ca.linkedin.com/in/shamrt
-    -
-        name: Facebook
-        handle: sha.mrt
-        url : http://facebook.com/sha.mrt
 
 education:
     start_date : 2010
@@ -45,33 +41,39 @@ skills:
         * [RStudio](http://www.rstudio.com) /
           [SPSS](http://www.ibm.com/software/analytics/spss) /
           [SAS](http://www.sas.com)
-        * [Sublime Text](http://www.sublimetext.com) /
+        * [Atom](http://atom.io) /
+          [Sublime Text](http://www.sublimetext.com) /
           [TextMate](http://macromates.com) /
           [VIM](http://www.vim.org)
+        * Command-line tools
+            ([Bash](http://en.wikipedia.org/wiki/Bash_(Unix_shell)) /
+             [ZSH](http://www.zsh.org))
+        * [Adobe Creative Suite](http://www.adobe.com)
+        * [Microsoft Office Suite](http://office.microsoft.com)
         * [RubyMine](https://www.jetbrains.com/ruby) /
           [Eclipse](http://eclipse.org) /
           [NetBeans](http://netbeans.org)
-          IDEs
-        * [Adobe Creative Suite](http://www.adobe.com)
-        * [Microsoft Office Suite](http://office.microsoft.com)
-        * [Bash](http://en.wikipedia.org/wiki/Bash_(Unix_shell\)) /
-          [ZSH](http://www.zsh.org)
 
     languages: |
         * [Python](http://www.python.org) ([Flask](http://flask.pocoo.org))
-        * [Ruby](http://www.ruby-lang.org)
-          ([Sinatra](http://www.sinatrarb.com), [Padrino](http://www.padrinorb.com))
         * [R](http://www.r-project.org)
+        * [Ruby](http://www.ruby-lang.org)
+            ([Sinatra](http://www.sinatrarb.com) \
+             [Padrino](http://www.padrinorb.com))
+        * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+            ([jQuery](http://jquery.com) / [Node.js](https://nodejs.org))
+        * [C](http://clang.llvm.org)
         * [PHP](http://php.net) ([Wordpress](http://wordpress.org))
-        * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) ([jQuery](http://jquery.com))
-        * [HTML5](http://www.html5rocks.com) /
-          [CSS3](http://www.css3.info)
-        * [HAML](http://haml.info) /
-          [SASS/SCSS](http://sass-lang.com) ([Compass](http://compass-style.org)) /
-          [Mako](http://www.makotemplates.org) /
-          [Jinja2](http://jinja.pocoo.org)
+        * [HTML5](http://www.html5rocks.com)
+            ([HAML](http://haml.info) /
+             [Mako](http://www.makotemplates.org) /
+             [Jinja2](http://jinja.pocoo.org))
+        * [CSS3](http://www.css3.info)
+            ([SCSS/SASS](http://sass-lang.com) /
+             [Compass](http://compass-style.org) /
+             [LESS](http://lesscss.org))
         * [LaTeX](http://www.latex-project.org)
-        * ([Multi](http://fletcherpenney.net/mmd))[Markdown](http://daringfireball.net/projects/markdown) /
+        * ([Multi](http://fletcherpenney.net/mmd)/[R](http://rmarkdown.rstudio.com))[Markdown](http://daringfireball.net/projects/markdown) /
           [Textile](http://redcloth.org/hobix.com/textile) /
           [MediaWiki](https://www.mediawiki.org/wiki/Main_Page)
 
