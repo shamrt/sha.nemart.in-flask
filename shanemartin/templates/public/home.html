@@ -68,10 +68,14 @@
               <div class="row">
                 <div class="col-xs-12">
                   {%- set start_date = job['start_date'].strftime('%B, %Y')|string %}
-                  {%- set end_date = job['end_date'].strftime('%B, %Y')|string %}
-                  {%- set job_timespan = start_date %}
-                  {%- if start_date != end_date %}
-                    {% set job_timespan = start_date + " – " + end_date %}
+                  {% set job_timespan = start_date %}
+                  {%- if job['end_date'] -%}
+                    {% set end_date = job['end_date'].strftime('%B, %Y')|string %}
+                    {% if start_date != end_date %}
+                      {% set job_timespan = job_timespan + " – " + end_date %}
+                    {% endif %}
+                  {% else %}
+                    {% set job_timespan = job_timespan + " – present" %}
                   {%- endif -%}
 
                   <h4>
