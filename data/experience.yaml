@@ -1,4 +1,31 @@
+2016:
+    -
+        title: jsSART
+        url: https://github.com/shamrt/jsSART
+        summary: |
+            A customizable Sustained Attention to Response Task (SART; described in [Robertson et al, 1997](http://www.sciencedirect.com/science/article/pii/S0028393297000158)) measure, built with [jsPsych](https://github.com/jodeleeuw/jsPsych).
+            *Solo effort.*
+        start_date: 2016-02-23
+        end_date: 2016-03-01
+        
+    -
+        title: redditanalyser
+        url: https://github.com/PsyBorgs/redditanalyser
+        summary: |
+        A scraper for Reddit communities with scripts to perform post-scraping text analysis.
+        *Solo effort.*
+        start_date: 2016-02-09
+
 2015:
+    -
+        title: jsPASAT
+        url: https://github.com/shamrt/jsPASAT
+        summary: |
+            A customizable [Paced Auditory Serial Addition Test](https://en.wikipedia.org/wiki/Paced_Auditory_Serial_Addition_Test) (PASAT) built with [jsPsych](https://github.com/jodeleeuw/jsPsych).
+            *Solo effort.*
+        start_date: 2015-10-17
+        end_date: 2016-02-02
+
     -
         title: MyLiqbo
         url: http://myliqbo.com
@@ -8,7 +35,6 @@
             Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com).
             *Developed together with my wife, Lianne Manzer.*
         start_date: 2015-07-15
-        end_date: 2015-08-18
 
     -
         title: LCBOAPI
@@ -28,7 +54,6 @@
             Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com), with some customizations.
             *Solo effort.*
         start_date: 2015-05-28
-        end_date: 2015-09-04
     -
         title: RAPA
         url: https://github.com/shamrt/rapa
