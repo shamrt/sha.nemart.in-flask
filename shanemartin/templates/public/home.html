@@ -78,11 +78,11 @@
                     {% set job_timespan = job_timespan + " – present" %}
                   {%- endif -%}
 
-                  <h4>
+                  <h4 class="title">
                     <a href="{{ job.url }}" target="_blank">{{ job.title }}</a>
                     <small>({{ job_timespan }})</small>
                   </h4>
-                  <h5>
+                  <h5 class="url">
                     <a href="{{ job.url }}" target="_blank">{{ job.url }}</a>
                     {{ macros.fa('link') }}
                   </h5>
