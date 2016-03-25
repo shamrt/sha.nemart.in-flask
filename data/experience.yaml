@@ -12,8 +12,8 @@
         title: redditanalyser
         url: https://github.com/PsyBorgs/redditanalyser
         summary: |
-        A scraper for Reddit communities with scripts to perform post-scraping text analysis.
-        *Solo effort.*
+            A scraper for Reddit communities with scripts to perform post-scraping text analysis.
+            *Solo effort.*
         start_date: 2016-02-09
 
 2015:
