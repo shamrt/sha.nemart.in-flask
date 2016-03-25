@@ -83,7 +83,7 @@ hr {
 
 #vcard {
   background-color: lighten($light_gray_color, 5%);
-  border: 10px solid #fff;
+  border: 15px solid #fff;
   -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
@@ -101,6 +101,9 @@ hr {
 
 .nav-tabs {
   border: 1px solid $light_gray_color;
+  border-bottom-width: 10px;
+  margin-bottom: 15px;
+
   > li {
     &.active > a {
       color: #555555;
@@ -135,7 +138,7 @@ hr {
 
 .tab-content {
   background-color: #ffffff;
-  padding: 0 15px;
+  padding-left: 15px;
   h5.url {
     font-size: 12px;
 
