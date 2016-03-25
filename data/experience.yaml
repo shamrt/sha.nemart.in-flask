@@ -7,7 +7,7 @@
             *Solo effort.*
         start_date: 2016-02-23
         end_date: 2016-03-01
-        
+
     -
         title: redditanalyser
         url: https://github.com/PsyBorgs/redditanalyser
@@ -49,7 +49,7 @@
         title: Psychology's EloRater
         url: http://elo.sha.nemart.in
         summary: |
-            A community-based project with the goal of rating the most influential people in the history of Psychology. An idea born from the mind of Dr. Christopher D. Green.
+            A community-based experiment with the goal of rating the most influential people in the history of Psychology. An idea born from the mind of Dr. Christopher D. Green.
 
             Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com), with some customizations.
             *Solo effort.*
