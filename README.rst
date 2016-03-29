@@ -10,11 +10,9 @@ Requirements
 
 - Python_
 - Fabric_
-- Compass_
 
 .. _Python: https://www.python.org/
 .. _Fabric: http://www.fabfile.org/
-.. _Compass: http://compass-style.org/
 
 Quickstart
 ----------

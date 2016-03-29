@@ -25,7 +25,8 @@ def setup(environ='dev'):
     """
     Setup virtual env and python packages.
     """
-    requirements = os.path.join(BASE_DIR, 'requirements', '{}.txt'.format(environ))
+    requirements = os.path.join(
+        BASE_DIR, 'requirements', '{}.txt'.format(environ))
 
     local("virtualenv env")
     with virtualenv():
