@@ -6,10 +6,9 @@ from flask_script import Manager, Shell, Server
 from shanemartin.app import create_app
 from shanemartin.settings import DevConfig, ProdConfig
 
+app = create_app(DevConfig)
 if os.environ.get("SHANEMARTIN_ENV") == 'prod':
     app = create_app(ProdConfig)
-else:
-    app = create_app(DevConfig)
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 TEST_PATH = os.path.join(HERE, 'tests')

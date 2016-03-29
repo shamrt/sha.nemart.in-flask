@@ -4,7 +4,7 @@
  *
  * Derived from: Victoria vCard (http://blacktie.co) by Carlos Alvarez
  */
-@import "compass/css3";
+
 
 // Colors
 $green_color: #668042;
@@ -60,15 +60,11 @@ h1, h2, h3, h4, h5, h6 {
 a {
   border-bottom: 1px dotted $light_blue_color;
   color: $link_color;
-  @include transition(color 0.1s ease-in, background 0.1s ease-in);
   &:hover, &:focus {
     border-bottom: 1px solid $link_color;
     color: $link_color;
     outline: 0;
     text-decoration: none;
-  }
-  &:before, &:after {
-    @include transition(color 0.1s ease-in, background 0.1s ease-in);
   }
 }
 

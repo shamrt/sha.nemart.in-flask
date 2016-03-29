@@ -17,6 +17,9 @@ class ProdConfig(Config):
     ENV = 'prod'
     DEBUG = False
     GOOGLE_ANALYTICS_ID = 'UA-7818804-1'
+    FREEZER_STATIC_IGNORE = ['*.scss']
+    PYSCSS_STYLE = 'compressed'
+
 
 class DevConfig(Config):
     """Development configuration."""
