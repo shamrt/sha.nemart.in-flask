@@ -1,6 +1,7 @@
 # Project-related
 shanemartin/build
 shanemartin/static/css/common.css
+shanemartin/static/js/common.js
 shanemartin/static/libs
 
 # Python

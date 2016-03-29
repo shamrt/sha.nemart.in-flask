@@ -1,1 +1,0 @@
-(function($,window){$('#nav-tabs a').click(function(e){$(this).tab('show');});var hash=$.trim(window.location.hash);if(hash)$('#nav-tabs a[href$="'+hash+'"]').trigger('click');}).call(this,jQuery,window);
