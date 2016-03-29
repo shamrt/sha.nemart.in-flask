@@ -32,6 +32,11 @@ social_networks:
         name: LinkedIn
         handle: shamrt
         url : http://ca.linkedin.com/in/shamrt
+    -
+        name: Keybase
+        handle: shamrt
+        icon: key
+        url : https://keybase.io/shamrt
 
 education:
     start_date : 2010

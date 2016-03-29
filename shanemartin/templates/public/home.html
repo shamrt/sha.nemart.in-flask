@@ -114,7 +114,11 @@
             <div class="row">
               {% for sn in pf.social_networks -%}
               <div class="col-xs-6">
+                  {% if sn.icon %}
+                  {{ macros.fa(sn.icon) }}
+                  {% else %}
                   {{ macros.fa(sn.name|lower + '-square') }}
+                  {% endif %}
                   <a href="{{ sn.url }}" title="My {{ sn.name }} account" target="_blank">{{ sn.handle }}</a>
               </div>
               {%- endfor %}
