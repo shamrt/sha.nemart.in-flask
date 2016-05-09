@@ -27,10 +27,10 @@
         end_date: 2016-02-02
 
     -
-        title: MyLiqbo
+        title: MyLiqbo.com
         url: http://myliqbo.com
         summary: |
-            A small webapp that, for now, helps you find your local (or any other) LCBO retail store and discover the best products available there.
+            A small webapp that, for now, helps you find the best LCBO retail store near you, and then discover the top-rated products available therein.
 
             Created using [Flask](http://flask.pocoo.org) and [Bootstrap](http://getbootstrap.com).
             *Developed together with my wife, Lianne Manzer.*
@@ -81,8 +81,7 @@
         title: CX Branding (defunct)
         url: http://cxbranding.com
         summary: |
-            CX Branding is the advertising and investment branch of ComerXGroup, an
-            international business group based out of Miami, Florida and Lima, Peru.
+            CX Branding was the advertising and investment branch of ComerXGroup, an international business group based out of Miami, Florida and Lima, Peru.
 
             Created with WordPress and the <a href="http://themeforest.net/item/whiteblack-premium-business-wordpress-theme/4482306" target="_blank">WhiteBlack theme by cmsmasters at ThemeForest</a>, with some customizations.
             *Solo effort. Client-managed.*
@@ -90,10 +89,10 @@
         end_date: 2013-09-06
 
     -
-        title: Dance Dance Dance
+        title: Dance Dance Dance (website retired)
         url: http://dancedancedance.ca
         summary: |
-            DanceDanceDance is a ballroom dance studio located on the Danforth in Toronto, ON.
+            DanceDanceDance was a ballroom dance studio located on the Danforth in Toronto, ON.
 
             Created with WordPress. The design is derived from <a href="http://www.inkthemes.com/wp-themes" target="_blank">Blackbird Theme</a>, though with a profusion of improvements and customizations.
             *Solo effort.*
@@ -105,30 +104,14 @@
         title: YUSHPP Website
         url: http://yushpp.yorku.ca
         summary: |
-            A summer of 2012 project that was commissioned in order to develop a
-            cohesive web presence for the Specialized Honours in Psychology Program at
-            York University (YUSHPP), with the aim of setting it apart
-            from other programs across the country. The theme strictly adheres to the
-            university's web style guidelines. Videos and timeline by Justin Garzon.
+            A summer of 2012 project that was commissioned in order to develop a cohesive web presence for the Specialized Honours in Psychology Program at York University (YUSHPP), with the aim of setting it apart from other programs across the country. The theme strictly adhered to the university's web style guidelines.
+            Videos and timeline by [Justin Garzon](http://justingarzon.com/).
 
             Strictly adheres to [York University's web guidelines](http://www.yorku.ca/yorkweb/standards/web/style-guide).
             *Project management, UX/UI development, web development and server management.*
 
         start_date: 2012-05-15
         end_date: 2012-09-07
-
-2011:
-    -
-        title: York University Baseball Website
-        url: http://yorkubaseball.ca
-        summary: >
-            As president and treasurer of the York University baseball club,
-            along with fellow player, <a href="http://sheyworth.com"
-            target="_blank">Shane Heyworth</a> (who did the design work), I
-            created the team's first independent web presence. *Project
-            management.*
-        start_date: 2011-05-05
-        end_date: 2011-09-14
 
 2010:
     -
@@ -156,9 +139,9 @@
         title: STAR Symposium Website (defunct)
         url: http://starsymposium.ca
         summary: |
-            The STAR Symposium is an annual science event hosted by the undergraduate and masters students from the science department at York University.
+            The STAR Symposium was an annual science event hosted by the undergraduate and masters students from the Science Department at York University.
 
-            Created with WordPress, the design is derived from, and utilizes much of, [Derek Punsalan](http://5thirtyone.com/)'s Grid Focus. *Solo effort.*
+            Created with WordPress, the design was derived from, and utilized much of, [Derek Punsalan](http://5thirtyone.com/)'s Grid Focus. *Solo effort.*
         start_date: 2009-01-02
         end_date: 2009-01-12
 
